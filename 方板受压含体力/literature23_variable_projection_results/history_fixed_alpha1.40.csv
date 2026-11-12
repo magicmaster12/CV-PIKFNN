@@ -1,0 +1,2 @@
+﻿iteration,closure_evaluations,alpha,trial_alpha,stage,boundary_loss,objective,held_out_loss,trial_held_out_loss,numerical_rank,displacement_L2,stress_L2,loss_bottom,loss_top,loss_left,loss_right
+0,1,1.4,1.4,"initial geometry, optimized coefficients",2.550610211299204e-19,2.0046086753004436e-16,4.846133292679627e-19,4.846133292679627e-19,317,3.140560605848663e-11,2.174850553715568e-10,7.622396050890529e-20,5.741181991703006e-20,6.653425586319291e-20,5.48909848407921e-20

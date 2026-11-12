@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "L": 1.0,
+    "E_real": 1000000.0,
+    "nu": 0.3333333333333333,
+    "U_ref": 0.0001,
+    "n_source_per_side": 48,
+    "n_boundary_per_side": 160,
+    "alpha_initials": [
+      1.1,
+      1.15,
+      1.2,
+      1.25,
+      1.3,
+      1.4,
+      1.5
+    ],
+    "alpha_min": 1.03,
+    "alpha_max": 1.8,
+    "warm_start": false,
+    "lbfgs_epochs": 80,
+    "lbfgs_max_iter": 20,
+    "lr": 1.0,
+    "regularization": 1e-14,
+    "qr_cutoff": 1e-07,
+    "source_parameter_scale": 100.0,
+    "source_delay_epochs": 2,
+    "print_every": 5,
+    "nx_plot": 101,
+    "device": "cuda",
+    "cuda_fallback_to_cpu": false,
+    "save_outputs": true,
+    "output_dir": "literature23_cold_conditioned_results",
+    "pinn_output_dir": "literature23_pinn_results"
+  },
+  "device": "cuda",
+  "error_definition": "componentwise norm(prediction-reference)/norm(reference) on nx_plot^2 grid",
+  "timing_scope": "Per run: model initialization, column assembly, basis-only QR preconditioning, training, in-training diagnostics; excludes final field evaluation, export, plotting",
+  "pairing": "Fixed and adaptive have identical initial source alpha, cold start, boundary points, regularization, and L-BFGS budgets",
+  "selection": "independent boundary residual, never reference error"
+}

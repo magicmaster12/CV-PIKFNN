@@ -1,0 +1,61 @@
+# =============================================================
+#  KM-PIKFNN 论文项目 — Git 忽略规则
+#  原则：代码 / notebook / 图表 / 小型表格全部上传；
+#        仅排除体积巨大、可由 COMSOL 重新导出的原始数据。
+# =============================================================
+
+# ---- 大型 COMSOL 网格导出（每个约 118 MB，超过 GitHub 100 MB 单文件上限）----
+# 复现 不规则圆孔 算例时需自行从 COMSOL 6.3 导出这三个文件放回原目录，
+# 详见 README「数据文件说明」。
+不规则圆孔/irregular_hole_M1_grid_801.txt
+不规则圆孔/irregular_hole_M2_grid_801.txt
+不规则圆孔/irregular_hole_M3_grid_801.txt
+
+# ---- 数值结果场原始数组（.npz，共约 116 MB），派生图表已保留 ----
+*.npz
+
+# ---- ParaView / VTK 非结构化网格输出 ----
+*.vtu
+*.vtp
+*.vtk
+
+# ---- Python 运行垃圾 ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# ---- Jupyter 运行缓存与临时锁 ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# ---- 训练日志 / 实验跟踪 ----
+*.log
+runs/
+wandb/
+lightning_logs/
+tmp/
+.cache/
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+
+# ---- 编辑器（保留 .vscode/settings.json，忽略个人工作区状态）----
+*.code-workspace
+.idea/
+
+# ---- 如需连结果图一起不上传，取消下面两行的注释 ----
+# *.png
+# *.pdf

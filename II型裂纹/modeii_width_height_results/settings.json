@@ -1,0 +1,50 @@
+{
+  "a": 1.0,
+  "E": 1.0,
+  "nu": 0.3,
+  "tau0": 1.0,
+  "plane_strain": true,
+  "width_ratios_b_over_a": [
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    4.0
+  ],
+  "height_ratios_h_over_a": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    6.0
+  ],
+  "source_margin_x_factor": 0.6,
+  "source_margin_y_factor": 0.3,
+  "n_src_side": 64,
+  "higher_williams_orders": [
+    1.5,
+    2.5
+  ],
+  "n_top": 121,
+  "n_side": 121,
+  "n_crack": 100,
+  "n_ligament": 100,
+  "eps_crack": 1e-06,
+  "svd_rcond": 1e-12,
+  "lambda_reg": 1e-10,
+  "w_top": 2.5,
+  "w_right": 1.5,
+  "w_left": 4.0,
+  "w_crack": 4.0,
+  "w_ligament": 4.0,
+  "lbfgs_epochs": 20,
+  "lbfgs_max_iter": 20,
+  "print_every": 5,
+  "training_device": "auto",
+  "blas_threads": 1,
+  "bem_nbase": 256,
+  "bem_grade": 2.0,
+  "plot_normalized_KII": true,
+  "show_figures": true,
+  "output_dir": "modeii_width_height_results"
+}

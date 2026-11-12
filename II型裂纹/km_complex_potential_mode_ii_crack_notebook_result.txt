@@ -1,0 +1,7 @@
+K-M complex-potential point-force PIKFNN Mode-II center-crack notebook result
+K_II predicted  : 1.9945146039
+K_II reference  : 2.1025451937
+relative error  : 5.138086%
+direct LS K_II  : -0.0000141887
+direct LS error : 100.000675%
+final loss      : 4.056015e-04

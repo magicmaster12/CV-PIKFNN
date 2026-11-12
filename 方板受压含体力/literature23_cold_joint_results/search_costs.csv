@@ -1,0 +1,3 @@
+﻿method,runs,total_solver_seconds,selected_alpha_initial
+Fixed KM-PIKFNN,7,2699.7414659999777,1.15
+Adaptive KM-PIKFNN,7,3336.943517799955,1.1

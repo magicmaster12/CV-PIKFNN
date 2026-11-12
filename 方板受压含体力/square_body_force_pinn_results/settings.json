@@ -1,0 +1,29 @@
+{
+  "device": "cuda",
+  "seed": 42,
+  "L": 1.0,
+  "E_real": 1000000.0,
+  "nu": 0.3333333333333333,
+  "U_ref": 0.0001,
+  "beta": 0.2,
+  "hidden": [
+    32,
+    32,
+    32
+  ],
+  "n_boundary_per_side": 100,
+  "n_interior": 1600,
+  "stress_loss_scale": 2.0,
+  "force_loss_scale": 4.0,
+  "adam_steps": 4000,
+  "adam_lr": 0.001,
+  "lbfgs_epochs": 120,
+  "lbfgs_max_iter": 20,
+  "print_every": 200,
+  "lbfgs_print_every": 5,
+  "nx_plot": 101,
+  "output_dir": "square_body_force_pinn_results",
+  "km_dir": "square_body_force_boundary_only_results",
+  "save_outputs": true,
+  "show": true
+}
